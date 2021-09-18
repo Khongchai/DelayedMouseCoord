@@ -12,8 +12,6 @@ export class DelayedMouse {
   delayedX: number;
   delayedY: number;
 
-  delta: number;
-
   speedDiff: number;
 
   constructor(speedDiff: number) {
@@ -26,16 +24,12 @@ export class DelayedMouse {
     this.delayedX = 0;
     this.delayedY = 0;
 
-    this.delta = 0;
-
     this.speedDiff = speedDiff;
   }
 
   updateMouse(curX: number, curY: number, delta: number) {
     this.curX = curX;
     this.curY = curY;
-
-    this.delta = delta;
 
     //Calculate delayed mouse
     this.calculateDelayed();
