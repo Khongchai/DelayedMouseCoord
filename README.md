@@ -5,7 +5,7 @@ Tween normalized mouse coordinates
 - Some libraries out there lack an easy-to-use interface due to them having been made for many purposes.
 
 **Solution**
-- This tween class is made for one and only one purpose: tweening normalized mouse coordinates. You put normalized coordinates in, you get the tweened version out. That's it.
+- This tween class was made for one and only one purpose: tweening normalized mouse coordinates. You put normalized coordinates in, you get the tweened version out. That's it.
 
 **Usage**
 
