@@ -5,7 +5,7 @@ export class Lerp{
   delayedX: number;
   delayedY: number;
 
-  private speedDiff: number;
+  private t: number;
 
   constructor(speedDiff: number) {
     this.curX = 0;
@@ -14,7 +14,7 @@ export class Lerp{
     this.delayedX = 0;
     this.delayedY = 0;
 
-    this.speedDiff = speedDiff;
+    this.t = t;
   }
 
   updateCoords(curX: number, curY: number) {
@@ -27,7 +27,7 @@ export class Lerp{
   }
 
   private calculateDelayed() {
-    this.delayedX = this.delayedX + (this.curX - this.delayedX) * this.speedDiff;
-    this.delayedY = this.delayedY + (this.curX - this.delayedX) * this.speedDiff;
+    this.delayedX = this.delayedX + (this.curX - this.delayedX) * this.t;
+    this.delayedY = this.delayedY + (this.curX - this.delayedX) * this.t;
   }
 }
