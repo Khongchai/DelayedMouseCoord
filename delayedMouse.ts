@@ -16,9 +16,6 @@ export class DelayedMouse {
     this.curX = 0;
     this.curY = 0;
 
-    this.diffX = 0;
-    this.diffY = 0;
-
     this.delayedX = 0;
     this.delayedY = 0;
 
