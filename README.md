@@ -1,3 +1,5 @@
+Code written // edited while I was very sleepy, proceed with caution.
+
 # What is this?
 
 Lerp wrapped in a class to help manage the state of the lerped value
