@@ -1,8 +1,8 @@
-# Lerp wrapped in a class to keep things tidy
+# Lerp wrapped in a class to help manage the state of the lerped value
 
-Usage example:
+Usage examples:
 
-# Use lerp to tween mouse coordinates
+## Use lerp to tween mouse coordinates
 
 Somewhere outside the function that calls requestAnimationFrame()
 ```ts
@@ -15,8 +15,17 @@ Somewhere inside the function that calls requestAnimationFrame()
 ```ts
 const { x, y } = lerp.updateCoords(
       clientX,
-      clientY,
-      delta
+      clientY
     );
+```
+
+## When you want to keep the state of the tweened mouse coordinates in React
+
+```ts
+
+const delayedMouse = useMemo(() => new Lerp(smoothness),[]);
+
+document.addEventListener("mousemove", (e) => lerp.updateCoords(e.clientX, e.clientY));
+
 ```
 
