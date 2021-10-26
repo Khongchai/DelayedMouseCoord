@@ -1,8 +1,8 @@
-#Lerp wrapped in a class to keep things tidy
+# Lerp wrapped in a class to keep things tidy
 
 Usage example:
 
-#Use lerp to tween mouse coordinates
+# Use lerp to tween mouse coordinates
 
 Somewhere outside the function that calls requestAnimationFrame()
 ```ts
