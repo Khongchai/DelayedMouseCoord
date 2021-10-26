@@ -7,8 +7,6 @@
 export class DelayedMouse {
   curX: number;
   curY: number;
-  diffX: number;
-  diffY: number;
   delayedX: number;
   delayedY: number;
 
@@ -38,10 +36,7 @@ export class DelayedMouse {
   }
 
   calculateDelayed() {
-    this.diffX = this.curX - this.delayedX;
-    this.diffY = this.curY - this.delayedY;
-
-    this.delayedX += this.diffX * this.speedDiff;
-    this.delayedY += this.diffY * this.speedDiff;
+    this.delayedX = this.delayedX + (this.curX - this.delayedX) * this.speedDiff;
+    this.delayedY = this.delayedY + (this.curX - this.delayedX) * this.speedDiff;
   }
 }
