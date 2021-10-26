@@ -1,28 +1,21 @@
-# DelayedMouseCoord
-Tween normalized mouse coordinates
+#Lerp wrapped in a class to keep things tidy
 
-This is just a simple lerp wrapped inside a class to keep your code tidier.
+Usage example:
 
-**Pain**
-- Some libraries out there lack an easy-to-use interface due to them having been made for many purposes.
-
-**Solution**
-- This tween class was made for one and only one purpose: tweening normalized mouse coordinates. You put normalized coordinates in, you get the tweened version out. That's it.
-
-**Usage**
+#Use lerp to tween mouse coordinates
 
 Somewhere outside the function that calls requestAnimationFrame()
 ```ts
 //lower = smoother
 const smoothness = 0.03;
-const delayedMouse = new DelayedMouse(smoothness);
+const lerp = new Lerp(smoothness);
 ```
 
 Somewhere inside the function that calls requestAnimationFrame()
 ```ts
-const { x, y } = delayedMouse.updateMouse(
-      normalizedMouse.x,
-      normalizedMouse.y,
+const { x, y } = lerp.updateCoords(
+      clientX,
+      clientY,
       delta
     );
 ```
