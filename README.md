@@ -9,14 +9,14 @@ Tween normalized mouse coordinates
 
 **Usage**
 
-Somewhere outside requestAnimationFrame()
+Somewhere outside the function that calls requestAnimationFrame()
 ```ts
 //lower = smoother
 const smoothness = 0.03;
 const delayedMouse = new DelayedMouse(smoothness);
 ```
 
-Somewhere inside requestAnimationFrame()
+Somewhere inside the function that calls requestAnimationFrame()
 ```ts
 const { x, y } = delayedMouse.updateMouse(
       normalizedMouse.x,
