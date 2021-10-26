@@ -1,5 +1,5 @@
 
-export class Lerp{
+export class Tween{
   private curX: number;
   private curY: number;
   delayedX: number;
