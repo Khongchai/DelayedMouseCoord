@@ -1,5 +1,6 @@
 # DelayedMouseCoord
 Tween normalized mouse coordinates
+
 This is just a simple lerp wrapped inside a class to keep your code tidier.
 
 **Pain**
