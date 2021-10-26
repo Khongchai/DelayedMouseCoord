@@ -17,7 +17,7 @@ export class Lerp{
     this.speedDiff = speedDiff;
   }
 
-  updateCoords(curX: number, curY: number, delta: number) {
+  updateCoords(curX: number, curY: number) {
     this.curX = curX;
     this.curY = curY;
     
