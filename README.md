@@ -4,7 +4,7 @@ Lerp wrapped in a class to help manage the state of the lerped value
 
 ## How is this useful? I can just write lerp myself!
 
-See usage below:
+See examples below:
 
 ## Use lerp to tween mouse coordinates
 
