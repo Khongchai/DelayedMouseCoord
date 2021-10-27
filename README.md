@@ -61,3 +61,7 @@ document.addEventListener("mousemove", (e) => tween.current.updateCoords(e.clien
 
 ```
 
+## Extend the logic and do something like this
+
+https://github.com/Khongchai/serenade-on-a-dream/blob/main/src/utils/delayedMouse.ts
+
